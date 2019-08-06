@@ -10,11 +10,7 @@ import {
   Linking,
   ImageBackground
 } from "react-native";
-import {
-  ModalBox,
-  Ripple,
-  ProgressBar,
-} from "../../../components";
+import { ModalBox, Ripple, ProgressBar } from "../../../components";
 import { Global, Colors, UserDefaults, URLs } from "../../../utils";
 import MaterialIcons from "react-native-vector-icons/MaterialIcons";
 import MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityIcons";
@@ -76,13 +72,9 @@ export default class Dashboard extends Component<Props> {
   getData() {
     this.setState({ isLoading: true });
 
-    fetch(
-      "http://alaziziyamanpower.com/new_webservices/list-resume.php?company_id=" +
-        this.state.id,
-      {
-        method: "GET"
-      }
-    )
+    fetch(URLs.listResumeCompany + "company_id=" + this.state.id, {
+      method: "GET"
+    })
       .then(response => response.json())
       .then(responseJson => {
         if (responseJson.message == 800) {
@@ -194,7 +186,7 @@ export default class Dashboard extends Component<Props> {
               }}
             >
               <Image
-              resizeMode={'contain'}
+                resizeMode={"contain"}
                 style={{
                   width: 110,
                   height: 110,
@@ -1778,7 +1770,7 @@ export default class Dashboard extends Component<Props> {
                     }}
                   >
                     <Image
-                    resizeMode={'contain'}
+                      resizeMode={"contain"}
                       style={{
                         width: 500,
                         height: 500,
@@ -1804,7 +1796,7 @@ export default class Dashboard extends Component<Props> {
                     }}
                   >
                     <Image
-                    resizeMode={'contain'}
+                      resizeMode={"contain"}
                       style={{
                         width: 500,
                         height: 500,

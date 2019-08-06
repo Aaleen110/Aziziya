@@ -70,14 +70,8 @@ export default class CompanyList extends Component<Props> {
 
 
   getData(){
-
     this.setState({isLoading:true})
-
-    console.log('Main', this.state.id)
-
-    // // fetch('http://alaziziyamanpower.com/new_webservices/getProfileAll.php', {
-
-    fetch('http://alaziziyamanpower.com/new_webservices/list-all-company.php?', {
+    fetch(URLs.allCompanies, {
     method: 'GET',
     })
     .then((response) => response.json())
@@ -118,7 +112,7 @@ approveCompany(id){
 }
 
 approve(id){
-	fetch('http://alaziziyamanpower.com/new_webservices/update-company-status.php?company_id='+id+'&status=1', {
+	fetch(URLs.updateCompanyStatus+'company_id='+id+'&status=1', {
     method: 'GET',
     })
     .then((response) => response.json())
@@ -142,7 +136,6 @@ addResume(){
 }
 
 populateResume(data){
-  console.log('Maine', data)
   this.setState({
     showResume:true,
     

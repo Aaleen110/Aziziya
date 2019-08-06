@@ -12,12 +12,7 @@ import {
 } from "react-native";
 import {
   ModalBox,
-  DialogHeader,
-  Ripple,
-  Separator,
-  Button,
   ProgressBar,
-  TextFieldOTP
 } from "../../../components";
 import { Global, Colors, UserDefaults, URLs } from "../../../utils";
 import MaterialIcons from "react-native-vector-icons/MaterialIcons";
@@ -80,11 +75,7 @@ export default class AdminDashboard extends Component<Props> {
   getData() {
     this.setState({ isLoading: true });
 
-    console.log("Main", this.state.id);
-
-    // // fetch('http://alaziziyamanpower.com/new_webservices/getProfileAll.php', {
-
-    fetch("http://alaziziyamanpower.com/new_webservices/list-all-resume.php?", {
+    fetch(URLs.allResume, {
       method: "GET"
     })
       .then(response => response.json())
@@ -112,7 +103,6 @@ export default class AdminDashboard extends Component<Props> {
   }
 
   populateResume(data) {
-    console.log("Maine", data);
     this.setState({
       showResume: true,
 

@@ -100,7 +100,7 @@ export default class Default extends Component<Props> {
 
   async getData() {
     this.setState({ isLoading: true });
-    fetch("http://alaziziyamanpower.com/new_webservices/list-all-resume.php?", {
+    fetch(URLs.allResume, {
       method: "GET"
     })
       .then(response => response.json())

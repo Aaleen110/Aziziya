@@ -152,13 +152,9 @@ export default class SignupScreenJob extends Component<Props> {
         "&image1=null" + //+this.state.half_image
         "&image2=null"; //+this.state.full_image
 
-      fetch(
-        "http://alaziziyamanpower.com/new_webservices/add-resume.php?company_id=7&" +
-          params,
-        {
-          method: "GET"
-        }
-      )
+      fetch(URLs.addResume + "company_id=7&" + params, {
+        method: "GET"
+      })
         .then(response => response.json())
         .then(responseJson => {
           if (responseJson.message == 500) {
