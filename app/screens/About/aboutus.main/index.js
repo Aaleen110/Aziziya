@@ -29,23 +29,17 @@ export default class About extends Component<Props> {
 
       </View>
 
+      <Text style = {{color:'#fff', fontSize:22, fontWeight:"400",marginTop:6, marginLeft:16}}>WHO WE ARE?</Text>
+       <Text style = {{padding:16, color:Colors._A2GrayCountryCode}}>
+Al Aziziya Manpower Supply Housemaids, House Drivers, Home Care Nurse, Skilled & Unskilled Labors from INDIA, Philippines, Kenya, Srilanka, Ethiopia, Bangladesh. AlaziziyaManpowerSupply is a manpower providing company located in doha Qatar.. we supply all sorts of services such as Housemaids which are very good at work,House drivers which are very particular of time,Home care nurse,Skilled and Unskilled labours from INDIAand any other countaries such as PHILIPPINES,KENYA,SRILANKA,ETHIOPIA,BANGLADESH ETC.
+</Text> 
+
+
       <Text style = {{color:'#fff', fontSize:22, fontWeight:"400",marginTop:6, marginLeft:16}}>HOW WE DO IT?</Text>
-       <Text style = {{padding:16, color:Colors._A2GrayCountryCode}}>
-                   Proin gravida nibh vel velit auctor aliquet. aks Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem.consequat ipsum, nec sagittis sem nibh id elit.Donec vestibulum justo a diam ultricies. pel lentesque. Quisque mattis diam vel.
-
-        Lorem Ipsum has been the industry's standard dummy text ever sincer they 1500s, when an unknown printer took and galley of type and scrambled. nisi elit consequat ipsum, nec sagittis sem nibh id elit.</Text> 
-
-        <Text style = {{color:'#fff', fontSize:22, fontWeight:"400",marginTop:6, marginLeft:16}}>WHY WE DO IT?</Text>
-       <Text style = {{padding:16, color:Colors._A2GrayCountryCode}}>
-                   Proin gravida nibh vel velit auctor aliquet. aks Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem.consequat ipsum, nec sagittis sem nibh id elit.Donec vestibulum justo a diam ultricies. pel lentesque. Quisque mattis diam vel.
-
-        Lorem Ipsum has been the industry's standard dummy text ever sincer they 1500s, when an unknown printer took and galley of type and scrambled. nisi elit consequat ipsum, nec sagittis sem nibh id elit.</Text> 
-
-        <Text style = {{color:'#fff', fontSize:22, fontWeight:"400",marginTop:6, marginLeft:16}}>WHO WE ARE?</Text>
-       <Text style = {{padding:16, color:Colors._A2GrayCountryCode}}>
-Al Aziziya Manpower Supply Housemaids, House Drivers, Home Care Nurse, Skilled and Unskilled Labors from INDIA, Philippines, Kenya, Srilanka, Ethiopia, Bangladesh.</Text> 
-
-             
+        <Text style = {{padding:16, color:Colors._A2GrayCountryCode}}>
+        AlaziziyaManpowerSupply is a manpower providing company located in doha Qatar.. we supply all sorts of services such as Housemaids which are very good at work,House drivers which are very particular of time,Home care nurse,Skilled and Unskilled labours from INDIAand any other countaries such as PHILIPPINES,KENYA,SRILANKA,ETHIOPIA,BANGLADESH ETC..           
+                   
+        </Text>              
     </ScrollView>
     )
   }

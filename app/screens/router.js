@@ -100,7 +100,7 @@ export const TabbarNavDefault = TabNavigator({
         key:Routes.defaultNav,
         navigationOptions: {
             header: null,
-            tabBarLabel: 'Home',
+            tabBarLabel: 'الرئيسية',
             tabBarIcon: tabIconNamed(1) 
           }
     },
@@ -110,7 +110,7 @@ export const TabbarNavDefault = TabNavigator({
         key:Routes.aboutNav,
         navigationOptions: {
             header: null,
-            tabBarLabel: 'About',
+            tabBarLabel: 'من نحن',
             tabBarIcon: tabIconNamed(3)
           }
     },
@@ -120,7 +120,7 @@ export const TabbarNavDefault = TabNavigator({
         key:Routes.contactusNav,
         navigationOptions: {
             header: null,
-            tabBarLabel: 'Contact',
+            tabBarLabel: 'وسائل الإتصال بنا',
             tabBarIcon: tabIconNamed(4) 
           }
     }
@@ -171,7 +171,7 @@ export const TabbarNavAdmin = TabNavigator({
         key:Routes.adminDashboardNav,
         navigationOptions: {
             header: null,
-            tabBarLabel: 'Home',
+            tabBarLabel: 'الرئيسية',
             tabBarIcon: tabIconNamed(1) // ('md-home')
             //tabBarIcon: tabIconNamed(Images.imageTab1) // ('md-home')
           }
@@ -182,7 +182,7 @@ export const TabbarNavAdmin = TabNavigator({
         key:Routes.companyNav,
         navigationOptions: {
             header: null,
-            tabBarLabel: 'Company',
+            tabBarLabel: 'الشركات',
             tabBarIcon: tabIconNamed(5)
             //tabBarIcon: tabIconNamed(Images.imageTab1) // ('md-home')
           }
@@ -193,7 +193,7 @@ export const TabbarNavAdmin = TabNavigator({
         key:Routes.aboutNav,
         navigationOptions: {
             header: null,
-            tabBarLabel: 'About',
+            tabBarLabel: 'من نحن',
             tabBarIcon: tabIconNamed(3)
             //tabBarIcon: tabIconNamed(Images.imageTab1) // ('md-home')
           }
@@ -204,7 +204,7 @@ export const TabbarNavAdmin = TabNavigator({
         key:Routes.contactusNav,
         navigationOptions: {
             header: null,
-            tabBarLabel: 'Contact',
+            tabBarLabel: 'وسائل الإتصال بنا',
             tabBarIcon: tabIconNamed(4)
             //tabBarIcon: tabIconNamed(Images.imageTab1) // ('md-home')
           }
@@ -250,7 +250,7 @@ export const TabbarNav = TabNavigator({
         key:Routes.dashboardNav,
         navigationOptions: {
             header: null,
-            tabBarLabel: 'Home',
+            tabBarLabel: 'الرئيسية',
             tabBarIcon: tabIconNamed(1) 
           }
     },
@@ -272,7 +272,7 @@ export const TabbarNav = TabNavigator({
         key:Routes.companyProfile,
         navigationOptions: {
             header: null,
-            tabBarLabel: 'Profile',
+            tabBarLabel: 'الملف الشخصي',
             tabBarIcon: tabIconNamed(2) 
           }
     },
@@ -282,7 +282,7 @@ export const TabbarNav = TabNavigator({
         key:Routes.aboutNav,
         navigationOptions: {
             header: null,
-            tabBarLabel: 'About',
+            tabBarLabel: 'من نحن',
             tabBarIcon: tabIconNamed(3)
           }
     },
@@ -292,7 +292,7 @@ export const TabbarNav = TabNavigator({
         key:Routes.contactusNav,
         navigationOptions: {
             header: null,
-            tabBarLabel: 'Contact',
+            tabBarLabel: 'وسائل الإتصال بنا',
             tabBarIcon: tabIconNamed(4) 
           }
     }

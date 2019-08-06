@@ -66,8 +66,7 @@ const styles = StyleSheet.create({
 	color:'grey',
 	textAlign:'center',
 	padding:16,
-	position:'absolute',
-	bottom:0
+	
   },
 
   textInputStyle :{

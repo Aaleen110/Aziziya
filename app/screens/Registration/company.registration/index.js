@@ -333,10 +333,7 @@ export default class Registration extends Component<Props> {
 
         <Text style = {{color:'red', justifyContent:'center', alignSelf:'center', paddingTop:16}}>{this.state.errorMessage}</Text>
 
-		    {isUpdate == 0 ?
-        <Text style = {styles.termsText}>By clicking you agreed to the <Text style = {{color:'#8D1B3D', fontSize:12, fontWeight:"400"}}>Terms and Conditions</Text> governing the use of jobportal</Text>
-        :(null)
-        }
+		    
 
       {isUpdate == 0 ?
         <Ripple 
@@ -351,6 +348,11 @@ export default class Registration extends Component<Props> {
             <Text style = {{alignSelf:'center', color:'white', fontWeight:'bold'}}>Update</Text>
           </Ripple>
       }
+
+{isUpdate == 0 ?
+        <Text style = {styles.termsText}>By clicking you agreed to the <Text style = {{color:'#8D1B3D', fontSize:12, fontWeight:"400"}}>Terms and Conditions</Text> governing the use of jobportal</Text>
+        :(null)
+        }
 
 		  {this.state.isLoading ? <ProgressBar/> : (null)} 
 		  </View>

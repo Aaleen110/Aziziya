@@ -68,225 +68,230 @@ export default class ContactUs extends Component<Props> {
 
   render(){
     return(
-   
-
-        <ScrollView
-        style={{ backgroundColor: '#1a1e27' }}
-        
-      >
+      <ScrollView style={{ backgroundColor: '#1a1e27' }}>
       
-    <View style= {{flexDirection:'column',backgroundColor:'#1a1e27', flex:1, }}>
+        <View style= {{flexDirection:'column',backgroundColor:'#1a1e27', flex:1}}>
 
-       <View style = {{backgroundColor:'#8D1B3D', height:180}}> 
-        <Text style = {{color:'#fff', fontSize:32, fontWeight:"400",marginTop:48, marginLeft:16}}>Contact Us</Text>
-        <Text style = {{color:Colors._A2GrayCountryCode, marginLeft:16}}>Find Jobs, Employment & Career Opportunities in QATAR</Text>
-       </View>
-        <View style = {{flexDirection:'row', marginTop:32}}>
-                  <MaterialIcons.Button
-                    name={'location-pin'}
-                    backgroundColor={'transparent'}
-                    color={ Colors._A2GrayCountryCode}
-                    onPress={() =>  this.setState({ isPasswordNotVisible: !this.state.isPasswordNotVisible })}
-                    underlayColor='transparent'
-                    size={36}
-                    style={{
-                      marginTop: 16,
-                      marginBottom: 0,
-                      padding: 10,
-                      marginLeft: 0,
-                      marginRight:0,
-                    }}
-                  />
-                  <Text style = {{color:Colors._A2GrayCountryCode, marginTop:32, fontSize:18 }}>Al Aziziya, Doha, QATAR</Text>
-        </View>
-
-
-        <View style = {{flexDirection:'row'}}>
-                  <MaterialIconsMain.Button
-                    name={'call'}
-                    backgroundColor={'transparent'}
-                    color={ Colors._A2GrayCountryCode}
-                    onPress={() =>  this.setState({ isPasswordNotVisible: !this.state.isPasswordNotVisible })}
-                    underlayColor='transparent'
-                    size={34}
-                    style={{
-                      marginTop: 16,
-                      marginBottom: 0,
-                      padding: 10,
-                      marginLeft: 0,
-                      marginRight:0,
-                    }}
-                  />
-                  <Text style = {{color:Colors._A2GrayCountryCode, marginTop:32, fontSize:18 }}>33263555</Text>
-        </View>
-
-        <View style = {{flexDirection:'row'}}>
-                  <FontAwesome.Button
-                    name={'fax'}
-                    backgroundColor={'transparent'}
-                    color={ Colors._A2GrayCountryCode}
-                    onPress={() =>  this.setState({ isPasswordNotVisible: !this.state.isPasswordNotVisible })}
-                    underlayColor='transparent'
-                    size={34}
-                    style={{
-                      marginTop: 16,
-                      marginBottom: 0,
-                      padding: 10,
-                      marginLeft: 0,
-                      marginRight:0,
-                    }}
-                  />
-                  <Text style = {{color:Colors._A2GrayCountryCode, marginTop:32, fontSize:18 }}>44771272</Text>
-        </View>
-
-        <View style = {{flexDirection:'row'}}>
-                   <MaterialIconsMain.Button
-                    name={'email'}
-                    backgroundColor={'transparent'}
-                    color={ Colors._A2GrayCountryCode}
-                    onPress={() =>  this.setState({ isPasswordNotVisible: !this.state.isPasswordNotVisible })}
-                    underlayColor='transparent'
-                    size={34}
-                    style={{
-                      marginTop: 16,
-                      marginBottom: 0,
-                      padding: 10,
-                      marginLeft: 0,
-                      marginRight:0,
-                    }}
-                  />
-                  <Text style = {{color:Colors._A2GrayCountryCode, marginTop:28, fontSize:18 }}>
-                  alaziziyamanpowersupply@gmail.com</Text>
-        </View>
+          <View style = {{backgroundColor:'#8D1B3D', height:180}}> 
+            <Text style = {{color:'#fff', fontSize:32, fontWeight:"400",marginTop:48, marginLeft:16}}>Contact Us</Text>
+            <Text style = {{color:Colors._A2GrayCountryCode, marginLeft:16}}>Find Jobs, Employment & Career Opportunities in QATAR</Text>
+          </View>
+          
+          <Ripple 
+            onPress= {()=>{
+              Linking.openURL('https://www.google.com/maps/place/Al+Aziziya+Manpower+Consultancy/@25.2425954,51.4467093,15z/data=!4m5!3m4!1s0x0:0x5c814e227fff9b91!8m2!3d25.2425954!4d51.4467093')
+            }}
+            style = {{flexDirection:'row', marginTop:32}}>
+                      <MaterialIcons.Button
+                        name={'location-pin'}
+                        backgroundColor={'transparent'}
+                        color={ Colors._A2GrayCountryCode}
+                        onPress={() =>  this.setState({ isPasswordNotVisible: !this.state.isPasswordNotVisible })}
+                        underlayColor='transparent'
+                        size={36}
+                        style={{
+                          marginTop: 16,
+                          marginBottom: 0,
+                          padding: 10,
+                          marginLeft: 0,
+                          marginRight:0,
+                        }}
+                      />
+                      <Text style = {{color:Colors._A2GrayCountryCode, marginTop:32, fontSize:16 }}>Al Aziziya, Doha, QATAR</Text>
+            </Ripple>
 
 
-        <View style= {{flexDirection:'row', marginTop:32}}>            
             <Ripple 
-                    onPress = {()=>{
-                      Linking.openURL('https://www.facebook.com/alaziziya.manpowersupply')
-                    }}
-                    style = {{height:40, width:40, backgroundColor:'transparent', borderRadius:10, borderWidth:1.3, borderColor:'#8D1B3D', marginLeft:32, marginTop:16,justifyContent:'center', alignItems:'center',}}>
-                        <FontAwesome.Button
-                            name={'facebook'}
-                            backgroundColor={'transparent'}
-                            color={ Colors._A2GrayCountryCode}
-                            onPress={() =>  this.setState({ isPasswordNotVisible: !this.state.isPasswordNotVisible })}
-                            underlayColor='transparent'
-                            size={30}
-                            style={{
-                            alignSelf:'center', 
-                            justifyContent:'center'   ,
-                            marginTop: 0,
-                            marginBottom: 0,
-                            padding: 0,
-                            marginLeft: 4,
-                            marginRight:0,
-                            }}
-                        />
-                </Ripple>
+            onPress={()=>{
+              Linking.openURL(`tel:${33263555}`)
+            }}
+            style = {{flexDirection:'row'}}>
+                      <MaterialIconsMain.Button
+                        name={'call'}
+                        backgroundColor={'transparent'}
+                        color={ Colors._A2GrayCountryCode}
+                        onPress={() =>  this.setState({ isPasswordNotVisible: !this.state.isPasswordNotVisible })}
+                        underlayColor='transparent'
+                        size={34}
+                        style={{
+                          marginTop: 16,
+                          marginBottom: 0,
+                          padding: 10,
+                          marginLeft: 0,
+                          marginRight:0,
+                        }}
+                      />
+                      <Text style = {{color:Colors._A2GrayCountryCode, marginTop:32, fontSize:16 }}>33263555</Text>
+            </Ripple>
 
+            <Ripple style = {{flexDirection:'row'}}>
+                      <FontAwesome.Button
+                        name={'fax'}
+                        backgroundColor={'transparent'}
+                        color={ Colors._A2GrayCountryCode}
+                        onPress={() =>  this.setState({ isPasswordNotVisible: !this.state.isPasswordNotVisible })}
+                        underlayColor='transparent'
+                        size={34}
+                        style={{
+                          marginTop: 16,
+                          marginBottom: 0,
+                          padding: 10,
+                          marginLeft: 0,
+                          marginRight:0,
+                        }}
+                      />
+                      <Text style = {{color:Colors._A2GrayCountryCode, marginTop:32, fontSize:16 }}>44771272</Text>
+            </Ripple>
+
+            <Ripple 
+              onPress = {() => Linking.openURL('mailto:salaziziyamanpowersupply@gmail.com') }
+              style = {{flexDirection:'row'}}>
+                      <MaterialIconsMain.Button
+                        name={'email'}
+                        backgroundColor={'transparent'}
+                        color={ Colors._A2GrayCountryCode}
+                        onPress={() =>  this.setState({ isPasswordNotVisible: !this.state.isPasswordNotVisible })}
+                        underlayColor='transparent'
+                        size={34}
+                        style={{
+                          marginTop: 16,
+                          marginBottom: 0,
+                          padding: 10,
+                          marginLeft: 0,
+                          marginRight:0,
+                        }}
+                      />
+                      <Text style = {{color:Colors._A2GrayCountryCode, marginTop:28, fontSize:16 }}>
+                      alaziziyamanpowersupply@gmail.com</Text>
+            </Ripple>
+
+
+            <View style= {{flexDirection:'row', marginTop:32}}>            
                 <Ripple 
-                    onPress = {()=>{
-                      Linking.openURL('https://twitter.com/Alaziziyamanpo1')
-                    }}
-                    style = {{height:40, width:40, backgroundColor:'transparent', borderRadius:10, borderWidth:1.3, borderColor:'#8D1B3D', marginLeft:32, marginTop:16,justifyContent:'center', alignItems:'center',}}>
-                        <FontAwesome.Button
-                            name={'twitter'}
-                            backgroundColor={'transparent'}
-                            color={ Colors._A2GrayCountryCode}
-                            onPress={() =>  this.setState({ isPasswordNotVisible: !this.state.isPasswordNotVisible })}
-                            underlayColor='transparent'
-                            size={28}
-                            style={{
-                            alignSelf:'center', 
-                            justifyContent:'center'   ,
-                            marginTop: 0,
-                            marginBottom: 0,
-                            padding: 0,
-                            marginLeft: 4,
-                            marginRight:0,
-                            }}
-                        />
-                </Ripple>
+                        onPress = {()=>{
+                          Linking.openURL('https://www.facebook.com/alaziziya.manpowersupply')
+                        }}
+                        style = {{height:40, width:40, backgroundColor:'transparent', borderRadius:10, borderWidth:1.3, borderColor:'#8D1B3D', marginLeft:32, marginTop:16,justifyContent:'center', alignItems:'center',}}>
+                            <FontAwesome.Button
+                                name={'facebook'}
+                                backgroundColor={'transparent'}
+                                color={ Colors._A2GrayCountryCode}
+                                onPress={() =>  this.setState({ isPasswordNotVisible: !this.state.isPasswordNotVisible })}
+                                underlayColor='transparent'
+                                size={30}
+                                style={{
+                                alignSelf:'center', 
+                                justifyContent:'center'   ,
+                                marginTop: 0,
+                                marginBottom: 0,
+                                padding: 0,
+                                marginLeft: 4,
+                                marginRight:0,
+                                }}
+                            />
+                    </Ripple>
 
-                <Ripple 
-                    onPress = {()=>{
-                      Linking.openURL('https://www.pinterest.com/alaziziyamanpowersupply0304/')
-                    }}
-                    style = {{height:40, width:40, backgroundColor:'transparent', borderRadius:10, borderWidth:1.3, borderColor:'#8D1B3D', marginLeft:32, marginTop:16,justifyContent:'center', alignItems:'center',}}>
-                        <FontAwesome.Button
-                            name={'pinterest-p'}
-                            backgroundColor={'transparent'}
-                            color={ Colors._A2GrayCountryCode}
-                            onPress={() =>  this.setState({ isPasswordNotVisible: !this.state.isPasswordNotVisible })}
-                            underlayColor='transparent'
-                            size={28}
-                            style={{
-                            alignSelf:'center', 
-                            justifyContent:'center'   ,
-                            marginTop: 0,
-                            marginBottom: 0,
-                            padding: 0,
-                            marginLeft: 4,
-                            marginRight:0,
-                            }}
-                        />
-                </Ripple>
+                    <Ripple 
+                        onPress = {()=>{
+                          Linking.openURL('https://twitter.com/Alaziziyamanpo1')
+                        }}
+                        style = {{height:40, width:40, backgroundColor:'transparent', borderRadius:10, borderWidth:1.3, borderColor:'#8D1B3D', marginLeft:32, marginTop:16,justifyContent:'center', alignItems:'center',}}>
+                            <FontAwesome.Button
+                                name={'twitter'}
+                                backgroundColor={'transparent'}
+                                color={ Colors._A2GrayCountryCode}
+                                onPress={() =>  this.setState({ isPasswordNotVisible: !this.state.isPasswordNotVisible })}
+                                underlayColor='transparent'
+                                size={28}
+                                style={{
+                                alignSelf:'center', 
+                                justifyContent:'center'   ,
+                                marginTop: 0,
+                                marginBottom: 0,
+                                padding: 0,
+                                marginLeft: 4,
+                                marginRight:0,
+                                }}
+                            />
+                    </Ripple>
 
-                <Ripple 
-                    onPress = {()=>{
-                      Linking.openURL('https://www.instagram.com/alaziziyamanpowersupply/') 
-                    }}
-                    style = {{height:40, width:40, backgroundColor:'transparent', borderRadius:10, borderWidth:1.3, borderColor:'#8D1B3D', marginLeft:32, marginTop:16,justifyContent:'center', alignItems:'center',}}>
-                        <FontAwesome.Button
-                            name={'instagram'}
-                            backgroundColor={'transparent'}
-                            color={ Colors._A2GrayCountryCode}
-                            underlayColor='transparent'
-                            size={28}
-                            style={{
-                            alignSelf:'center', 
-                            justifyContent:'center'   ,
-                            marginTop: 0,
-                            marginBottom: 0,
-                            padding: 0,
-                            marginLeft: 4,
-                            marginRight:0,
-                            }}
-                        />
-                </Ripple>
+                    <Ripple 
+                        onPress = {()=>{
+                          Linking.openURL('https://www.pinterest.com/alaziziyamanpowersupply0304/')
+                        }}
+                        style = {{height:40, width:40, backgroundColor:'transparent', borderRadius:10, borderWidth:1.3, borderColor:'#8D1B3D', marginLeft:32, marginTop:16,justifyContent:'center', alignItems:'center',}}>
+                            <FontAwesome.Button
+                                name={'pinterest-p'}
+                                backgroundColor={'transparent'}
+                                color={ Colors._A2GrayCountryCode}
+                                onPress={() =>  this.setState({ isPasswordNotVisible: !this.state.isPasswordNotVisible })}
+                                underlayColor='transparent'
+                                size={28}
+                                style={{
+                                alignSelf:'center', 
+                                justifyContent:'center'   ,
+                                marginTop: 0,
+                                marginBottom: 0,
+                                padding: 0,
+                                marginLeft: 4,
+                                marginRight:0,
+                                }}
+                            />
+                    </Ripple>
 
-                <Ripple 
-                    onPress = {()=>{
-                      Linking.openURL('https://al-aziziya-manpower-supply.business.site/') 
-                    }}
-                    style = {{height:40, width:40, backgroundColor:'transparent', borderRadius:10, borderWidth:1.3, borderColor:'#8D1B3D', marginLeft:32, marginTop:16,justifyContent:'center', alignItems:'center',}}>
-                        <MaterialCommunityIcons.Button
-                            name={'earth'}
-                            backgroundColor={'transparent'}
-                            color={ Colors._A2GrayCountryCode}
-                            onPress={() =>  this.setState({ isPasswordNotVisible: !this.state.isPasswordNotVisible })}
-                            underlayColor='transparent'
-                            size={30}
-                            style={{
-                            alignSelf:'center', 
-                            justifyContent:'center'   ,
-                            marginTop: 0,
-                            marginBottom: 0,
-                            padding: 0,
-                            marginLeft: 4,
-                            marginRight:0,
-                            }}
-                        />
-                </Ripple>
-        </View>        
-        
-     </View>             
+                    <Ripple 
+                        onPress = {()=>{
+                          Linking.openURL('https://www.instagram.com/alaziziyamanpowersupply/') 
+                        }}
+                        style = {{height:40, width:40, backgroundColor:'transparent', borderRadius:10, borderWidth:1.3, borderColor:'#8D1B3D', marginLeft:32, marginTop:16,justifyContent:'center', alignItems:'center',}}>
+                            <FontAwesome.Button
+                                name={'instagram'}
+                                backgroundColor={'transparent'}
+                                color={ Colors._A2GrayCountryCode}
+                                underlayColor='transparent'
+                                size={28}
+                                style={{
+                                alignSelf:'center', 
+                                justifyContent:'center'   ,
+                                marginTop: 0,
+                                marginBottom: 0,
+                                padding: 0,
+                                marginLeft: 4,
+                                marginRight:0,
+                                }}
+                            />
+                    </Ripple>
 
-        <Text 
-          onPress={this.logout}
-          style = {{alignSelf:'center', margin:64, color:'#611e32', fontWeight:'bold', fontSize:18,}}>LOGOUT</Text>
-     </ScrollView>
+                    <Ripple 
+                        onPress = {()=>{
+                          Linking.openURL('https://al-aziziya-manpower-supply.business.site/') 
+                        }}
+                        style = {{height:40, width:40, backgroundColor:'transparent', borderRadius:10, borderWidth:1.3, borderColor:'#8D1B3D', marginLeft:32, marginTop:16,justifyContent:'center', alignItems:'center',}}>
+                            <MaterialCommunityIcons.Button
+                                name={'earth'}
+                                backgroundColor={'transparent'}
+                                color={ Colors._A2GrayCountryCode}
+                                onPress={() =>  this.setState({ isPasswordNotVisible: !this.state.isPasswordNotVisible })}
+                                underlayColor='transparent'
+                                size={30}
+                                style={{
+                                alignSelf:'center', 
+                                justifyContent:'center'   ,
+                                marginTop: 0,
+                                marginBottom: 0,
+                                padding: 0,
+                                marginLeft: 4,
+                                marginRight:0,
+                                }}
+                            />
+                    </Ripple>
+            </View>        
+            
+        </View>             
+
+            <Text onPress={this.logout}
+              style = {{alignSelf:'center', margin:64, color:'#611e32', fontWeight:'bold', fontSize:18,}}>LOGOUT</Text>
+      </ScrollView>
              
     
     )
