@@ -1,14 +1,7 @@
 import React, { Component } from "react";
 import {
-  Alert,
   View,
-  Text,
-  TextInput,
   Image,
-  Animated,
-  Keyboard,
-  KeyboardAvoidingView,
-  NetInfo
 } from "react-native";
 import { NavigationActions, StackActions } from "react-navigation";
 import { UserDefaults, URLs } from "../../../utils";
@@ -78,28 +71,22 @@ export default class SplashScreen extends Component {
       .then(token => {
         if (token) {
           if (token == 0) {
-            console.log("Token", token);
             setTimeout(() => {
-              // this.navigateToMain();
               this.navigateToLogin();
             }, 2000);
           } else {
             setTimeout(() => {
-              // this.navigateToLogin();
               this.navigateToMain();
             }, 2000);
           }
         } else {
-          console.log("Token", token);
           setTimeout(() => {
-            // this.navigateToMain();
             this.navigateToLogin();
           }, 2000);
         }
       })
       .catch(error => {
         this.navigateToLogin();
-        console.log("ERROR", "ERROR");
       });
   }
 
