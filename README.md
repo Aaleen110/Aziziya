@@ -15,3 +15,9 @@ Clone the repository
 Run sudo npm i in the projects root
 Run sudo react-native run-android or react-native run-ios
 ```
+
+```
+The application can be downloaded from Play Store from the following link
+https://play.google.com/store/apps/details?id=com.aziziya
+
+```
