@@ -1,16 +1,11 @@
 import React, { Component } from "react";
-import {
-  View,
-  Image,
-} from "react-native";
+import { View, Image } from "react-native";
 import { NavigationActions, StackActions } from "react-navigation";
-import { UserDefaults, URLs } from "../../../utils";
+import { UserDefaults } from "../../../utils";
 
 export default class SplashScreen extends Component {
   constructor(props) {
     super(props);
-    this.state = {};
-
     this.navigateToLogin = this.navigateToLogin.bind(this);
     this.navigateToMain = this.navigateToMain.bind(this);
   }
@@ -92,29 +87,32 @@ export default class SplashScreen extends Component {
 
   render() {
     return (
-      <View
-        style={{
-          flex: 1,
-          backgroundColor: "#1a1e27",
-          justifyContent: "center",
-          padding: 32,
-          flexDirection: "row",
-          alignItems: "center"
-        }}
-      >
+      <View style={style.container}>
         <Image
-          style={{
-            marginLeft: 16,
-            marginTop: 0,
-            alignSelf: "center",
-            height: 160,
-            width: 160
-          }}
+          style={style.icon}
           source={require("../../../assets/common/logo.png")}
         />
       </View>
     );
   }
 }
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: "#1a1e27",
+    justifyContent: "center",
+    padding: 32,
+    flexDirection: "row",
+    alignItems: "center"
+  },
+  icon: {
+    marginLeft: 16,
+    marginTop: 0,
+    alignSelf: "center",
+    height: 160,
+    width: 160
+  }
+});
 
 console.disableYellowBox = true;

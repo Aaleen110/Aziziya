@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { View, Text, StyleSheet } from 'react-native'
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
-import {Global, Colors} from '../../utils'
+import {Colors} from '../../utils'
 
 
 export default class StateRepresentation extends Component {

@@ -4,7 +4,7 @@ import UserDefaults from './handlers/localstotage'
 import Routes from './consts/routes'
 import URLs from './consts/urls'
 import * as Images from './consts/images'
-
+import * as Constants from './consts/constants'
 
 module.exports= {
     Global,
@@ -12,6 +12,6 @@ module.exports= {
     UserDefaults,
     Routes,
     URLs,
-    Images
-
+    Images,
+    Constants
 }

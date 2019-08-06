@@ -1,10 +1,8 @@
 export default Routes = {
-
     splashScreen:'splashScreen',
     loginScreen:'loginScreen',
     signupScreen:'signupScreen',
     forgotPassword:'forgotPassword',   
-    
     signupScreenJob:'signupScreenJob',
     signupScreenUpload:'signupScreenUpload',
     profile:'profile',
