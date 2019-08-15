@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Alert, Text, View, TextInput, ScrollView } from "react-native";
-import { ModalBox, Ripple, Separator, ProgressBar } from "../../../components";
-import { Global, Constants, UserDefaults, URLs } from "../../../utils";
+import { Ripple, Separator, ProgressBar } from "../../../components";
+import { Global, Constants, URLs } from "../../../utils";
 import styles from "./styles";
 import { Dropdown } from "react-native-material-dropdown";
 
@@ -19,7 +19,6 @@ export default class SignupScreenJob extends Component<Props> {
       notice: "",
       skills: "",
       description: "",
-
       fullname: "",
       mobile: "",
       email: "",
@@ -152,7 +151,7 @@ export default class SignupScreenJob extends Component<Props> {
         "&image1=null" + //+this.state.half_image
         "&image2=null"; //+this.state.full_image
 
-      fetch(URLs.addResume + "company_id=7&" + params, {
+      fetch(URLs.URLs.addResume + "company_id=7&" + params, {
         method: "GET"
       })
         .then(response => response.json())
@@ -184,58 +183,12 @@ export default class SignupScreenJob extends Component<Props> {
     return (
       <ScrollView style={{ backgroundColor: "#1a1e27" }}>
         <View style={{ paddingTop: 32, paddingLeft: 30 }}>
-          <View
-            style={{
-              flex: 1,
-              flexDirection: "row",
-              justifyContent: "space-evenly",
-              marginTop: 20,
-              marginBottom: 16,
-              marginLeft: -30
-            }}
-          >
-            <View
-              style={{
-                borderColor: "#fff",
-                borderWidth: 0.3,
-                marginLeft: 10,
-                backgroundColor: "#8D1B3D",
-                borderWidth: 0.5,
-                height: 15,
-                width: 15,
-                alignSelf: "center",
-                borderRadius: 20,
-                justifyContent: "center"
-              }}
-            />
+          <View style={styles.innerLayer1}>
+            <View style={styles.innerLayer2} />
 
-            <View
-              style={{
-                borderColor: "#fff",
-                borderWidth: 0.3,
-                marginLeft: 10,
-                backgroundColor: "#8D1B3D",
-                height: 15,
-                width: 15,
-                alignSelf: "center",
-                borderRadius: 20,
-                justifyContent: "center"
-              }}
-            />
+            <View style={styles.innerLayer3} />
 
-            <View
-              style={{
-                borderColor: "#fff",
-                borderWidth: 0.3,
-                marginLeft: 10,
-                backgroundColor: "#1a1e27",
-                height: 15,
-                width: 15,
-                alignSelf: "center",
-                borderRadius: 20,
-                justifyContent: "center"
-              }}
-            />
+            <View style={styles.innerLayer4} />
           </View>
 
           <Text style={styles.welcome}>Job,</Text>

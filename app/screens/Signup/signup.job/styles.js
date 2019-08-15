@@ -1,96 +1,76 @@
-import { StyleSheet, Dimensions } from 'react-native'
-import { Global, Color, URLs } from '../../../utils'
-
-
-
-export const imageWidth = Global.screenWidth * 0.75
-export const imageHeight = (imageWidth * 0.1800) * (2.5)
-export const imageHeightSmall = (imageWidth * 0.1800) * (1)
+import { StyleSheet, Dimensions } from "react-native";
+import { Global, Color, URLs } from "../../../utils";
 
 const styles = StyleSheet.create({
-
-
   container: {
     flex: 1,
-    alignItems: 'flex-start',
-    alignContent:'flex-start',
-    justifyContent: 'flex-start',
-    paddingTop:150,
-    backgroundColor: 'white',
-   
+    flexDirection: "row",
+    justifyContent: "space-evenly",
+    marginTop: 20,
+    marginBottom: 16,
+    marginLeft: -30
   },
 
-
-  textFieldContainer: {
-    flexDirection: 'row',
-    marginTop: 28,
-    justifyContent: 'center',
-    alignContent: 'center',
-    alignItems: 'center',
-    alignSelf: 'center',
-    width: Global.screenWidth * 0.9
-  },
-  buttonContainer: {
-    backgroundColor:'#556190',
-    height: 46,
-    margin: 26,
-    width: Global.screenWidth * 0.7,
-    borderColor: '#556190',
-    alignSelf: 'center',
-    borderRadius: 4,
-   
-  },
-  textChangeCountryCode: {
-    textAlign: 'right'
-  },
- 
-
-
-  welcome:{
-    fontSize:30,
-    fontWeight:"bold",
-    color:'#8D1B3D',
-    justifyContent:'flex-start',
-    
-    
-  },
-  subText:{
-    fontSize:18,
-    fontWeight:"500",
-    color:'grey',
+  innerLayer1: {
+    borderColor: "#fff",
+    borderWidth: 0.3,
+    marginLeft: 10,
+    backgroundColor: "#8D1B3D",
+    borderWidth: 0.5,
+    height: 15,
+    width: 15,
+    alignSelf: "center",
+    borderRadius: 20,
+    justifyContent: "center"
   },
 
-  textInputStyle :{
-      
-    backgroundColor:'transparent',
-  
-    marginLeft:16,
-    marginRight:16,
-},
+  innerLayer2: {
+    borderColor: "#fff",
+    borderWidth: 0.3,
+    marginLeft: 10,
+    backgroundColor: "#8D1B3D",
+    height: 15,
+    width: 15,
+    alignSelf: "center",
+    borderRadius: 20,
+    justifyContent: "center"
+  },
 
-centerText: {
-    flex: 1,
+  innerLayer3: {
+    borderColor: "#fff",
+    borderWidth: 0.3,
+    marginLeft: 10,
+    backgroundColor: "#1a1e27",
+    height: 15,
+    width: 15,
+    alignSelf: "center",
+    borderRadius: 20,
+    justifyContent: "center"
+  },
+
+  innerLayer4: {
+    borderColor: "#fff",
+    borderWidth: 0.3,
+    marginLeft: 10,
+    backgroundColor: "#1a1e27",
+    height: 15,
+    width: 15,
+    alignSelf: "center",
+    borderRadius: 20,
+    justifyContent: "center"
+  },
+
+  welcome: {
+    fontSize: 30,
+    fontWeight: "bold",
+    color: "#8D1B3D",
+    justifyContent: "flex-start"
+  },
+  subText: {
     fontSize: 18,
-    padding: 32,
-    color: '#777',
-  },
-  textBold: {
-    fontWeight: '500',
-    color: '#000',
-  },
-  buttonText: {
-    fontSize: 21,
-    color: 'rgb(0,122,255)',
-  },
-  buttonTouchable: {
-    padding: 16,
-  
-  },
+    fontWeight: "500",
+    color: "grey"
+  }
+});
 
-  cameraContainer: {
-    height: Dimensions.get('window').height,
-  },
-})
-
-
-export default styles
+export default styles;

@@ -115,7 +115,7 @@ export default class LoginScreen extends Component<Props> {
           "&usertype=1";
       }
 
-      fetch(URLs.login + params, {
+      fetch(URLs.URLs.login + params, {
         method: "GET"
       })
         .then(response => response.json())

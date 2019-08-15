@@ -75,7 +75,7 @@ export default class AdminDashboard extends Component<Props> {
   getData() {
     this.setState({ isLoading: true });
 
-    fetch(URLs.allResume, {
+    fetch(URLs.URLs.allResume, {
       method: "GET"
     })
       .then(response => response.json())

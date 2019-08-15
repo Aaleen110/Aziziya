@@ -3,7 +3,7 @@
 import React, {Component} from 'react';
 import {Image, Text, View, ScrollView, Alert } from 'react-native';
 import {ModalBox, DialogHeader, Ripple, Separator, Button, ProgressBar, TextFieldOTP} from '../../../components' 
-import { Global, Colors, UserDefaults, URLs } from '../../../utils'
+import { Colors, UserDefaults} from '../../../utils'
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons'
 import FontAwesome5 from 'react-native-vector-icons/FontAwesome5'

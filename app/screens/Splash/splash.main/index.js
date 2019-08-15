@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { View, Image } from "react-native";
+import { View, Image, StyleSheet } from "react-native";
 import { NavigationActions, StackActions } from "react-navigation";
 import { UserDefaults } from "../../../utils";
 
@@ -97,7 +97,7 @@ export default class SplashScreen extends Component {
   }
 }
 
-const styles = StyleSheet.create({
+const style = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: "#1a1e27",

@@ -71,7 +71,7 @@ export default class CompanyList extends Component<Props> {
 
   getData(){
     this.setState({isLoading:true})
-    fetch(URLs.allCompanies, {
+    fetch(URLs.URLs.allCompanies, {
     method: 'GET',
     })
     .then((response) => response.json())
@@ -112,7 +112,7 @@ approveCompany(id){
 }
 
 approve(id){
-	fetch(URLs.updateCompanyStatus+'company_id='+id+'&status=1', {
+	fetch(URLs.URLs.updateCompanyStatus+'company_id='+id+'&status=1', {
     method: 'GET',
     })
     .then((response) => response.json())

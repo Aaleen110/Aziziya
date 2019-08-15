@@ -104,7 +104,7 @@ export default class Registration extends Component<Props> {
           this.state.whatsapp +
           "&country=" +
           this.state.country;
-        fetch(URLs.addCompany + params, {
+        fetch(URLs.URLs.addCompany + params, {
           method: "GET"
         })
           .then(response => response.json())
@@ -162,7 +162,7 @@ export default class Registration extends Component<Props> {
           "&company_id=" +
           this.state.id;
 
-        fetch(URLs.updateCompany + "company_id=" + params, {
+        fetch(URLs.URLs.updateCompany + "company_id=" + params, {
           method: "GET"
         })
           .then(response => response.json())

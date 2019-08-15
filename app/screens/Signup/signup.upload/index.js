@@ -1,26 +1,7 @@
 import React, { Component } from "react";
-import {
-  KeyboardAvoidingView,
-  Alert,
-  Dimensions,
-  Platform,
-  StyleSheet,
-  Text,
-  View,
-  TouchableOpacity,
-  Linking,
-  TextInput,
-  ScrollView,
-  Image
-} from "react-native";
-import {
-  ModalBox,
-  DialogHeader,
-  Ripple,
-  Separator,
-  ProgressBar
-} from "../../../components";
-import { Global, Colors, UserDefaults, URLs } from "../../../utils";
+import { Alert, Text, View } from "react-native";
+import { Ripple, ProgressBar } from "../../../components";
+import { Global, URLs } from "../../../utils";
 import MaterialIcons from "react-native-vector-icons/MaterialIcons";
 import MaterialIcon from "react-native-vector-icons/Ionicons";
 import styles from "./styles";
@@ -34,7 +15,6 @@ import {
 export default class SignupScreenUpload extends Component<Props> {
   constructor(props) {
     super(props);
-
     this.state = {
       disableFlag: false,
       showLoginModal: true,
@@ -45,7 +25,6 @@ export default class SignupScreenUpload extends Component<Props> {
       half_image: "",
       full_image: "",
       cv_image: "",
-
       test_image: "",
       resume_id: ""
     };
@@ -64,9 +43,6 @@ export default class SignupScreenUpload extends Component<Props> {
   componentDidMount() {
     const { navigation } = this.props;
     const resume_id = navigation.getParam("resume_id", "");
-
-    console.log("RESUMEID", resume_id);
-
     this.setState({
       resume_id: resume_id,
       img_half: ""
@@ -88,8 +64,6 @@ export default class SignupScreenUpload extends Component<Props> {
 
   uploadImageToServer = () => {
     this.setState({ isLoading: true });
-    // console.log('DATA sent', this.state.data)
-
     RNFetchBlob.fetch(
       "POST",
       "http://alaziziyamanpower.com/new_webservices/model/upload_image.php",
@@ -309,10 +283,6 @@ export default class SignupScreenUpload extends Component<Props> {
         .catch(error => {
           Alert.alert("Error", error);
         });
-
-      // }).catch((error) => {
-      //   Alert.alert('Error', error)
-      // })
     }
   }
 
@@ -320,7 +290,6 @@ export default class SignupScreenUpload extends Component<Props> {
     if (
       this.state.half_image != "" &&
       this.state.full_image != ""
-      //this.state.cv_image != ""
     ) {
       this.setState({ isLoading: true });
 
@@ -586,7 +555,6 @@ export default class SignupScreenUpload extends Component<Props> {
             name={this.state.uploadFullImage ? "md-checkmark" : null}
             backgroundColor={"transparent"}
             color={"green"}
-            //  onPress={() => this.props.navigation.dispatch(NavigationActions.back())}
             underlayColor="transparent"
             size={30}
             style={{

@@ -72,7 +72,7 @@ export default class Dashboard extends Component<Props> {
   getData() {
     this.setState({ isLoading: true });
 
-    fetch(URLs.listResumeCompany + "company_id=" + this.state.id, {
+    fetch(URLs.URLs.listResumeCompany + "company_id=" + this.state.id, {
       method: "GET"
     })
       .then(response => response.json())
